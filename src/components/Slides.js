@@ -32,7 +32,7 @@ function Slides({slides}) {
     return (
         <div>
             <div id="navigation" className="text-center">
-                <button data-testid="button-restart" className="small outlined" onClick={()=>reset()} disabled={active===0}>Restart</button>
+                <button data-testid="button-restart" id='' className="small outlined" onClick={()=>reset()} disabled={active===0}>Restart</button>
                 <button data-testid="button-prev" className="small" onClick={()=>previous()} disabled={active===0}>Prev</button>
                 <button data-testid="button-next" className="small" onClick={()=>next()} disabled={active=== allslides.length - 1}>Next</button>
             </div>
